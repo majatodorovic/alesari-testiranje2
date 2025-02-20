@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Get in Touch:",
+    "text": "Have a question about our products or services? Need assistance with your order? Our dedicated team is here to help. Feel free to reach out to us via email at info@alesari.com.",
+    "email": "info@alesari.com",
+    "text2": "Stay connected with the latest news, updates, and exclusive offers by following us on social media. Discover the world of Alesari and join our vibrant community on <a className=\"active-hover\" target=\"_blank\" href=\"https://www.facebook.com/alesariofficial/\">Facebook</a>, <a target=\"_blank\" href=\"https://www.instagram.com/alesari_official/\">Instagram</a>, Twitter, and Pinterest. Whether you're seeking style inspiration or simply want to engage with fellow Alesari enthusiasts, our social media profiles are your window into the world of luxury couture."
+  },
+  {
+    "id": 3,
+    "title": "Your Feedback Matters:",
+    "text": "At Alesari, we value your feedback and strive to continuously improve our products and services. If you have any comments, suggestions, or feedback you'd like to share with us, we'd love to hear from you. Your input is invaluable in helping us shape the future of our brand and better serve your needs."
+  }
+]

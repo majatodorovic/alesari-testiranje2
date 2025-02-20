@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "title": "Porcelain Flower Restoration:",
+    "text": "Have a question about our products or services? Need assistance with your order? Our dedicated team is here to help. Feel free to reach out to us via email at info@alesari.com.",
+    "email": "info@alesari.com"
+  },
+  {
+    "id": 2,
+    "title": "Shoe Maintenance Tips: ",
+    "text": "To prolong the lifespan of your Alesari shoes, here are a few essential maintenance tips: ",
+    "is_list": true,
+    "list": [
+      "Avoid wearing your shoes on rough surfaces to prevent scratches to the gold-plated sole. While they are designed for special occasions, such as strolling down the red carpet, we understand that life is filled with unexpected moments. ",
+      "Store your shoes in their original packaging or a soft dust bag to protect them from dust and scratches when not in use. ",
+      "Regularly clean your shoes with a soft cloth to remove any dirt or residue, ensuring that they maintain their pristine appearance.",
+      "For stubborn stains or marks, consult with a professional shoe cleaner to ensure safe and effective removal without damaging the delicate materials."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "",
+    "text": "For any further inquiries or assistance, please don't hesitate to contact us via email. Our dedicated team is here to ensure that your Alesari experience is nothing short of extraordinary, from the moment you slip into your shoes to the countless memories they inspire. "
+  }
+]

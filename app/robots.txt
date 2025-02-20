@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://b2c.alesari.croonus.com/sitemap.xml

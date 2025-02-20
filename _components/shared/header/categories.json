@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Shoes",
+    "children": [
+      {
+        "id": 6,
+        "name": "Sneakers",
+        "slug_path": "/shoes/sneakers",
+        "description": "The best sneakers in the world"
+      },
+      {
+        "id": 7,
+        "name": "Boots",
+        "slug_path": "/shoes/boots",
+        "description": "The best boots in the world"
+      }
+    ],
+    "description": "The best shoes in the world",
+    "slug_path": "/shoes"
+  },
+  {
+    "id": 2,
+    "name": "T-Shirts",
+    "description": "The best t-shirts in the world",
+    "slug_path": "/t-shirts"
+  },
+  {
+    "id": 3,
+    "name": "Pants",
+    "description": "The best pants in the world",
+    "slug_path": "/pants"
+  },
+  {
+    "id": 4,
+    "name": "Hats",
+    "description": "The best hats in the world",
+    "slug_path": "/hats"
+  },
+  {
+    "id": 5,
+    "name": "Socks",
+    "description": "The best socks in the world",
+    "slug_path": "/socks"
+  }
+]
