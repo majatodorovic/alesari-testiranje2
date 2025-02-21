@@ -117,21 +117,56 @@ export const MobileMenu = ({ handleOpenMenu, menuItems, data }) => {
           )}
         </div>
         <div className="mt-[2.2rem] flex flex-col gap-2 border-t border-black py-5 pl-2">
-          <p className="mb-3 font-sans text-base font-bold">Explore</p>
-          {landingPagesList?.items?.map((item, index) => {
-            return (
-              <Link
-                onClick={() => {
-                  handleSelectedCategory([]);
-                  handleOpenMenu(false);
-                }}
-                href={`/page/${item?.slug}`}
-                className="pl-3 font-sans text-base font-bold uppercase"
-              >
-                <span className="pr-2">•</span> {item?.name}
-              </Link>
-            );
-          })}
+        <p className="mb-3 font-sans text-base font-bold">Explore</p>
+  
+  <Link
+    href="/connect-with-us"
+    onClick={() => handleOpenMenu(false)}
+    className="pl-3 font-sans text-base font-bold uppercase"
+  >
+    <span className="pr-2">•</span> Connect with us
+  </Link>
+
+  <Link
+    href="/customer-care"
+    onClick={() => handleOpenMenu(false)}
+    className="pl-3 font-sans text-base font-bold uppercase"
+  >
+    <span className="pr-2">•</span> Customer care
+  </Link>
+
+  <Link
+    href="/discover-the-designer"
+    onClick={() => handleOpenMenu(false)}
+    className="pl-3 font-sans text-base font-bold uppercase"
+  >
+    <span className="pr-2">•</span> Discover the designer
+  </Link>
+
+  <Link
+    href="/who-is-alesari-woman"
+    onClick={() => handleOpenMenu(false)}
+    className="pl-3 font-sans text-base font-bold uppercase"
+  >
+    <span className="pr-2">•</span> Who is Alesari Women
+  </Link>
+
+  <Link
+    href="/page/made-for-you"
+    onClick={() => handleOpenMenu(false)}
+    className="pl-3 font-sans text-base font-bold uppercase"
+  >
+    <span className="pr-2">•</span> Made for you
+  </Link>
+
+  <Link
+    href="page/alesari-bridal-couture"
+    onClick={() => handleOpenMenu(false)}
+    className="pl-3 font-sans text-base font-bold uppercase"
+  >
+    <span className="pr-2">•</span> Alesari Bridal Couture
+  </Link>
+        
         </div>
         <div className={`mt-auto flex flex-col`}>
           {menuItems?.pages?.map(({ id, name, href }) => {

@@ -75,7 +75,7 @@ const TermsAndConditions = () => {
       <h3 className={`mt-7 text-[1.3rem] font-bold`}>8. Pricing and Payment</h3>
       <p className={`mt-3 text-[1.1rem]`}>
         All prices listed on our website are in US dollars and are subject to
-        change without notice. We accept payment via payment card and PayPal only. Payment
+        change without notice. We accept payment via payment card and PayPal. Payment
         is processed securely via our payment gateway.
       </p>
       <h3 className={`mt-7 text-[1.3rem] font-bold`}>

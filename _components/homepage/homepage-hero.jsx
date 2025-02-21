@@ -171,6 +171,7 @@ export const HomepageHero = ({ banners }) => {
                 button,
                 text,
                 title,
+                subtitle,
                 target,
                 url,
                 file_data: {
@@ -215,6 +216,12 @@ export const HomepageHero = ({ banners }) => {
                       >
                         {title}
                       </h1>
+                    )}
+                      {/* Podnaslov */}
+                      {subtitle && (
+                    <h5 className="font-sans text-[1.40rem] font-bold leading-[3.216rem] text-black">
+                        {subtitle}
+                    </h5>
                     )}
                     {button && (
                       <Link
