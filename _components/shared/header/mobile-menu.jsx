@@ -77,11 +77,10 @@ export const MobileMenu = ({ handleOpenMenu, menuItems, data }) => {
                     />
                   </div>
                   <div
-                    className={`flex flex-col gap-2 ${
-                      selectedCategory?.children?.length > 0
+                    className={`flex flex-col gap-2 ${selectedCategory?.children?.length > 0
                         ? `visible mt-2 pl-5`
                         : `hidden`
-                    }`}
+                      }`}
                   >
                     {children.map(
                       ({ id, name, link: { link_path: slug_path } }) => (
@@ -117,56 +116,56 @@ export const MobileMenu = ({ handleOpenMenu, menuItems, data }) => {
           )}
         </div>
         <div className="mt-[2.2rem] flex flex-col gap-2 border-t border-black py-5 pl-2">
-        <p className="mb-3 font-sans text-base font-bold">Explore</p>
-  
-  <Link
-    href="/connect-with-us"
-    onClick={() => handleOpenMenu(false)}
-    className="pl-3 font-sans text-base font-bold uppercase"
-  >
-    <span className="pr-2">•</span> Connect with us
-  </Link>
+          <p className="mb-3 font-sans text-base font-bold">Explore</p>
 
-  <Link
-    href="/customer-care"
-    onClick={() => handleOpenMenu(false)}
-    className="pl-3 font-sans text-base font-bold uppercase"
-  >
-    <span className="pr-2">•</span> Customer care
-  </Link>
+          <Link
+            href="/contact-us"
+            onClick={() => handleOpenMenu(false)}
+            className="pl-3 font-sans text-base font-bold uppercase"
+          >
+            <span className="pr-2">•</span> Connect with us
+          </Link>
 
-  <Link
-    href="/discover-the-designer"
-    onClick={() => handleOpenMenu(false)}
-    className="pl-3 font-sans text-base font-bold uppercase"
-  >
-    <span className="pr-2">•</span> Discover the designer
-  </Link>
+          <Link
+            href="/customer-care"
+            onClick={() => handleOpenMenu(false)}
+            className="pl-3 font-sans text-base font-bold uppercase"
+          >
+            <span className="pr-2">•</span> Customer care
+          </Link>
 
-  <Link
-    href="/who-is-alesari-woman"
-    onClick={() => handleOpenMenu(false)}
-    className="pl-3 font-sans text-base font-bold uppercase"
-  >
-    <span className="pr-2">•</span> Who is Alesari Women
-  </Link>
+          <Link
+            href="/discover-the-designer"
+            onClick={() => handleOpenMenu(false)}
+            className="pl-3 font-sans text-base font-bold uppercase"
+          >
+            <span className="pr-2">•</span> Discover the designer
+          </Link>
 
-  <Link
-    href="/page/made-for-you"
-    onClick={() => handleOpenMenu(false)}
-    className="pl-3 font-sans text-base font-bold uppercase"
-  >
-    <span className="pr-2">•</span> Made for you
-  </Link>
+          <Link
+            href="/who-is-alesari-woman"
+            onClick={() => handleOpenMenu(false)}
+            className="pl-3 font-sans text-base font-bold uppercase"
+          >
+            <span className="pr-2">•</span> Who is Alesari Women
+          </Link>
 
-  <Link
-    href="page/alesari-bridal-couture"
-    onClick={() => handleOpenMenu(false)}
-    className="pl-3 font-sans text-base font-bold uppercase"
-  >
-    <span className="pr-2">•</span> Alesari Bridal Couture
-  </Link>
-        
+          <Link
+            href="/page/made-for-you"
+            onClick={() => handleOpenMenu(false)}
+            className="pl-3 font-sans text-base font-bold uppercase"
+          >
+            <span className="pr-2">•</span> Made for you
+          </Link>
+
+          <Link
+            href="page/alesari-bridal-couture"
+            onClick={() => handleOpenMenu(false)}
+            className="pl-3 font-sans text-base font-bold uppercase"
+          >
+            <span className="pr-2">•</span> Alesari Bridal Couture
+          </Link>
+
         </div>
         <div className={`mt-auto flex flex-col`}>
           {menuItems?.pages?.map(({ id, name, href }) => {
