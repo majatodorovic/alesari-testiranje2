@@ -219,7 +219,7 @@ export const HomepageHero = ({ banners }) => {
                     )}
                     {/* Podnaslov */}
                     {subtitle && (
-                      <h5 className="font-sans text-[1.0rem] font-bold leading-[3.216rem] text-black mb-[-2rem]">
+                      <h5 className="font-sans text-[1.0rem] font-bold leading-[3.216rem] text-black mb-[-2.2rem]">
                         {subtitle}
                       </h5>
                     )}
