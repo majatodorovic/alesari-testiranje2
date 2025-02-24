@@ -229,7 +229,7 @@ export const HomepageHero = ({ banners }) => {
                         target={`${target ?? "_self"}`}
                       >
                         <Button
-                          className={`!hover:bg-black !hover:text-white !border-black bg-transparent !text-black mb-[-3rem]`}
+                          className={`!hover:bg-black !hover:text-white mt-[-3rem] !border-black bg-transparent !text-black mb-[-3rem]`}
                         >
                           {button}
                         </Button>
