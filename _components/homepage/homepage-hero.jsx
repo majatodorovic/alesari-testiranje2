@@ -113,11 +113,11 @@ export const HomepageHero = ({ banners }) => {
                         {title}
                       </h4>
                     )}
-                      {/* Podnaslov */}
+                    {/* Podnaslov */}
                     {subtitle && (
-                    <h5 className="font-sans text-[1.40rem] font-bold leading-[3.216rem] text-black">
+                      <h5 className="font-sans text-[1.40rem] font-bold leading-[3.216rem] text-black">
                         {subtitle}
-                    </h5>
+                      </h5>
                     )}
                     {button && (
                       <Link
@@ -217,11 +217,11 @@ export const HomepageHero = ({ banners }) => {
                         {title}
                       </h1>
                     )}
-                      {/* Podnaslov */}
-                      {subtitle && (
-                    <h5 className="font-sans text-[1.40rem] font-bold leading-[3.216rem] text-black">
+                    {/* Podnaslov */}
+                    {subtitle && (
+                      <h5 className="font-sans text-[1.0rem] font-bold leading-[3.216rem] text-black mb-[-2.rem]">
                         {subtitle}
-                    </h5>
+                      </h5>
                     )}
                     {button && (
                       <Link
@@ -229,7 +229,7 @@ export const HomepageHero = ({ banners }) => {
                         target={`${target ?? "_self"}`}
                       >
                         <Button
-                          className={`!hover:bg-black !hover:text-white mt-[2rem] !border-black bg-transparent !text-black`}
+                          className={`!hover:bg-black !hover:text-white !border-black bg-transparent !text-black mb-[-3rem]`}
                         >
                           {button}
                         </Button>
