@@ -212,14 +212,14 @@ export const HomepageHero = ({ banners }) => {
                   >
                     {title && (
                       <h1
-                        className={`font-sans text-[1.526rem] font-bold leading-[2.216rem] text-black`}
+                        className={`font-sans text-[1.526rem] font-bold leading-[2.216rem] text-white`}
                       >
                         {title}
                       </h1>
                     )}
                     {/* Podnaslov */}
                     {subtitle && (
-                      <h5 className="mb-[-2.2rem] font-sans text-[1.0rem] font-bold leading-[3.216rem] text-black">
+                      <h5 className="mb-[-2.2rem] font-sans text-[1.0rem] font-bold leading-[3.216rem] text-white">
                         {subtitle}
                       </h5>
                     )}
@@ -229,7 +229,7 @@ export const HomepageHero = ({ banners }) => {
                         target={`${target ?? "_self"}`}
                       >
                         <Button
-                          className={`!hover:bg-black !hover:text-white mb-[-3rem] mt-[2rem] !border-black bg-transparent !text-black`}
+                          className={` mb-[-3rem] mt-[2rem] !border-white bg-transparent !text-white`}
                         >
                           {button}
                         </Button>

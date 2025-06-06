@@ -210,7 +210,7 @@ const CheckoutData = ({
         />
       </div>
       <div className={`col-span-6 flex flex-col gap-3 lg:col-span-3`}>
-        <div className="customScroll mb-16 hidden max-h-[400px] flex-col gap-5 overflow-y-auto sm:mb-10 sm:flex">
+        <div className="customScroll mb-16 hidden max-h-[400px] flex-col gap-5 overflow-y-auto sm:mb-10 lg:flex">
           {(items ?? [])?.map(
             ({
               product: {
