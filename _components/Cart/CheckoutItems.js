@@ -44,16 +44,28 @@ const CheckoutItems = ({
         key={key}
         className={`relative grid grid-cols-7 gap-1 md:place-items-center md:gap-5`}
       >
-        <Link href={`/${slug_path}`} className={`col-span-7 md:col-span-3`}>
-          <Image
-            src={image?.[0] ?? "/comr.png"}
-            alt={`Comr`}
-            width={0}
-            height={0}
-            sizes={`100vw`}
-            className={`h-auto w-full`}
-          />
-        </Link>
+   <Link href={`/${slug_path}`} className="col-span-7 md:col-span-3">
+  {/* Mobilna verzija slike */}
+  <div className="relative w-[100px] h-[100px] block md:hidden">
+    <Image
+      src={image?.[0] ?? "/comr.png"}
+      alt="Comr"
+      fill
+      className="object-contain"
+    />
+  </div>
+
+  {/* Verzija za tablet i desktop */}
+  <Image
+    src={image?.[0] ?? "/comr.png"}
+    alt="Comr"
+    width={0}
+    height={0}
+    sizes="100vw"
+    className="hidden h-auto w-full md:block"
+  />
+</Link>
+
         <div
           className={`relative col-span-7 ml-2 flex flex-col items-start gap-1 md:col-span-4 md:ml-[2rem] md:gap-2`}
         >
