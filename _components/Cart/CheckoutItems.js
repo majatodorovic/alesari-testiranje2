@@ -49,7 +49,7 @@ const CheckoutItems = ({
   <div className="relative w-[100px] h-[100px] block md:hidden">
     <Image
       src={image?.[0] ?? "/comr.png"}
-      alt="Comr"
+      alt={'Comr'} 
       fill
       className="object-contain"
     />
@@ -58,7 +58,7 @@ const CheckoutItems = ({
   {/* Verzija za tablet i desktop */}
   <Image
     src={image?.[0] ?? "/comr.png"}
-    alt="Comr"
+    alt={'Comr'} 
     width={0}
     height={0}
     sizes="100vw"
