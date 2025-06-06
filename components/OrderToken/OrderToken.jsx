@@ -1,6 +1,5 @@
-"use client";
-
 import { OrderItemsInfo, OrderPaymentInfo } from "@/_components/order";
+import { notFound } from "next/navigation";
 
 const OrderSuccess = ({ order }) => {
   if (order) {
@@ -12,7 +11,7 @@ const OrderSuccess = ({ order }) => {
         <OrderItemsInfo order={order} />
       </div>
     );
-  }
+  } else return notFound();
 };
 
 export default OrderSuccess;

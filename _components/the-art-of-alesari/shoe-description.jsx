@@ -66,10 +66,11 @@ export const ShoeDescription = () => {
               });
             }}
             key={key}
-            className={`absolute ${hoveredDot?.key === key && hoveredDot?.show
+            className={`absolute ${
+              hoveredDot?.key === key && hoveredDot?.show
                 ? `scale-150`
                 : `scale-100`
-              } h-4 w-4 rounded-full border border-black bg-white shadow transition-all duration-500 hover:border-white hover:bg-primary`}
+            } h-4 w-4 rounded-full border border-black bg-white shadow transition-all duration-500 hover:border-white hover:bg-primary`}
             style={{ left: value.left, top: value.top }}
           ></div>
         ))}

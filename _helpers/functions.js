@@ -76,7 +76,9 @@ export const currencyFormat = (
 
   // Format to two decimal places
   const price = new Intl.NumberFormat('de-DE', options).format(amount)
-  const currencyLabel = currency?.toLocaleUpperCase() ?? ''
+  let currencyLabel = currency?.toLocaleUpperCase() ?? ''
+
+  if(currencyLabel === 'USD') currencyLabel = '$';
 
   return ` ${currencyLabel}${price}`.trim()
 }

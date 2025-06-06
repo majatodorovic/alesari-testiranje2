@@ -61,37 +61,37 @@ export const BigBanner = ({ banner }) => {
               {(is_mobile
                 ? banner?.mobile?.[0]?.title
                 : banner?.desktop?.[0]?.title) && (
-                  <h2
-                    className={`font-serif text-[1.4rem] uppercase text-white md:text-[2rem]`}
-                  >
-                    {is_mobile
-                      ? banner?.mobile?.[0]?.title
-                      : banner?.desktop?.[0]?.title}
-                  </h2>
-                )}
+                <h2
+                  className={`font-serif text-[1.4rem] uppercase text-white md:text-[2rem]`}
+                >
+                  {is_mobile
+                    ? banner?.mobile?.[0]?.title
+                    : banner?.desktop?.[0]?.title}
+                </h2>
+              )}
               {(is_mobile
                 ? banner?.mobile?.[0]?.subtitle
                 : banner?.mobile?.[0]?.subtitle) && (
-                  <h3
-                    className={`font-serif text-[2.2rem] font-bold uppercase text-white md:text-[3rem]`}
-                  >
-                    {is_mobile
-                      ? banner?.mobile?.[0]?.subtitle
-                      : banner?.desktop?.[0]?.subtitle}
-                  </h3>
-                )}
+                <h3
+                  className={`font-serif text-[2.2rem] font-bold uppercase text-white md:text-[3rem]`}
+                >
+                  {is_mobile
+                    ? banner?.mobile?.[0]?.subtitle
+                    : banner?.desktop?.[0]?.subtitle}
+                </h3>
+              )}
             </div>
             {(is_mobile
               ? banner?.mobile?.[0]?.text
               : banner?.mobile?.[0]?.text) && (
-                <p
-                  className={`font-sans text-[1.7rem] text-white max-md:text-[1rem] md:text-[2.5rem]`}
-                >
-                  {is_mobile
-                    ? banner?.mobile?.[0]?.text
-                    : banner?.desktop?.[0]?.text}
-                </p>
-              )}
+              <p
+                className={`font-sans text-[1.7rem] text-white max-md:text-[1rem] md:text-[2.5rem]`}
+              >
+                {is_mobile
+                  ? banner?.mobile?.[0]?.text
+                  : banner?.desktop?.[0]?.text}
+              </p>
+            )}
           </Layout>
           <Image
             src={`/other/gold-divider.png`}

@@ -86,7 +86,7 @@ export const OrderItemsInfo = ({ order }) => {
                     {item?.basic_data?.sku}
                   </p>
                   <p className={`mt-2 font-sans text-base font-semibold`}>
-                    {currencyFormat(item?.price?.total)}
+                    {currencyFormat(item?.price?.total, item?.price?.currency)}
                   </p>
                 </div>
               </div>

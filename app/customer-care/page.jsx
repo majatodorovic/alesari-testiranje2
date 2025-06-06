@@ -10,16 +10,15 @@ const CustomerCare = () => {
       <h1 className={`active-selected text-2xl font-bold uppercase`}>
         Customer Care
       </h1>
-      <div className={`mt-10 grid grid-cols-2 gap-10 lg:gap-20`}>
+      <div className={`mt-10 grid grid-cols-2 gap-10 text-justify lg:gap-20`}>
         <div className={`col-span-2 lg:col-span-1`}>
           <p className={`font-sans text-[1.2rem]`}>
             Welcome to the Care & Maintenance Hub of Alesari, where we ensure
             that your cherished shoes remain as exquisite as the day you first
             wore them. We understand that even the most carefully crafted
-            treasures may encounter wear and tear over time.
-            Here, we offer guidance on how to maintain the beauty of your
-            Alesari shoes and provide solutions should they require a touch of
-            rejuvenation.
+            treasures may encounter wear and tear over time. Here, we offer
+            guidance on how to maintain the beauty of your Alesari shoes and
+            provide solutions should they require a touch of rejuvenation.
           </p>
 
           <p className={`mt-10 font-sans text-[1.2rem]`}>
@@ -35,7 +34,7 @@ const CustomerCare = () => {
             , and we'll guide you through the process of replacing the flower,
             ensuring that your shoes continue to radiate their timeless charm.
           </p>
-          <p className={`mt-10 font-sans text-[1.2rem]`}>
+          <p className={`mt-10 font-sans text-[1.2rem] tracking-tight`}>
             <strong>Shoe Maintenance Tips </strong>
             <br />
             To prolong the lifespan of your Alesari shoes, here are a few

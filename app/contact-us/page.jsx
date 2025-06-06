@@ -7,14 +7,14 @@ const Contact = ({ searchParams: { slug } }) => {
       <h1 className={`active-selected text-2xl font-bold uppercase`}>
         Contact Us
       </h1>
-      <p className={`mt-5 text-[1.1rem]`}>
+      <p className={`mt-5 text-justify text-[1.1rem]`}>
         Welcome to the Alesari Contact Us page—a gateway to personalized
         assistance and unparalleled support. We're here to ensure that your
         experience with us is nothing short of exceptional, guiding you every
         step of the way and addressing any inquiries you may have.
       </p>
 
-      <div className={`mt-10 flex flex-col gap-5`}>
+      <div className={`mt-10 flex flex-col gap-5 text-justify`}>
         {data?.map(({ title, text, text2, email, id }) => {
           const findEmail = (text) => {
             if (!text) return ""; // Ako je text undefined, vrati prazan string

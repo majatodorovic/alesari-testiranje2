@@ -110,7 +110,7 @@ const CheckoutPage = ({
             <>
               <div className="grid grid-cols-5 gap-x-3 gap-y-3 font-sans max-xl:mx-auto max-xl:w-[95%]">
                 <div className="col-span-5 bg-white p-1 max-xl:row-start-1">
-                  <h3 className="mb-[2rem] block text-[26px] font-thin">
+                  <h3 className="mb-[2rem] block text-[26px] font-thin hidden lg:block">
                     Your shipping information
                   </h3>
                   <form

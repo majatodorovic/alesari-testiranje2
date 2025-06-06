@@ -118,6 +118,14 @@ const CheckoutData = ({
   useEffect(() => {
     if (isCheckoutSuccess && !data?.fields) {
       switch (true) {
+        case data?.payment_provider_data?.inner_redirect?.page === "paypal":
+          return router.push(`/paypal/${data?.order?.order_token}`);
+        case data?.payment_provider_data?.external_redirect:
+          window.open(
+            data?.payment_provider_data?.external_redirect?.url,
+            "_blank",
+          );
+          break;
         case Boolean(data?.payment_provider_data?.form) === false:
           return router.push(`/bag/checkout/${data?.order?.order_token}`);
         case Boolean(data?.payment_provider_data?.form) === true:
@@ -136,7 +144,48 @@ const CheckoutData = ({
 
   return (
     <>
+      <div
+        className={`customScroll col-span-6 mb-16 flex flex max-h-[400px] flex-col flex-col gap-3 gap-5 overflow-y-auto sm:mb-10 lg:col-span-3 lg:hidden`}
+      >
+        {(items ?? [])?.map(
+          ({
+            product: {
+              basic_data: { id_product, name, sku },
+              price,
+              inventory,
+              image,
+              link: { link_path: slug_path },
+            },
+            cart: { quantity, cart_item_id },
+          }) => {
+            return (
+              <Suspense fallback={<div>Loading...</div>}>
+                <CheckoutItems
+                  key={id_product}
+                  id={id_product}
+                  name={name}
+                  price={price}
+                  isClosed={isClosed}
+                  refreshSummary={refreshSummary}
+                  quantity={+quantity}
+                  inventory={inventory}
+                  image={image}
+                  sku={sku}
+                  className={className}
+                  refreshCart={refreshCart}
+                  slug_path={slug_path}
+                  cart_item_id={cart_item_id}
+                />
+              </Suspense>
+            );
+          },
+        )}
+      </div>
+
       <div className={`col-span-6 mt-0 flex flex-col gap-5 lg:col-span-3`}>
+        <h3 className="mb-[2rem] block text-[26px] font-thin lg:hidden">
+          Your shipping information
+        </h3>
         <CheckoutUserInfo
           errors={errors}
           setErrors={setErrors}
@@ -161,9 +210,7 @@ const CheckoutData = ({
         />
       </div>
       <div className={`col-span-6 flex flex-col gap-3 lg:col-span-3`}>
-        <div
-          className={` customScroll mb-16 flex max-h-[400px] flex-col gap-5 overflow-y-auto sm:mb-10`}
-        >
+        <div className="customScroll mb-16 hidden max-h-[400px] flex-col gap-5 overflow-y-auto sm:mb-10 sm:flex">
           {(items ?? [])?.map(
             ({
               product: {
@@ -240,6 +287,14 @@ const CheckoutData = ({
             </Link>{" "}
             of Alesari.
           </label>
+        </div>
+        <div>
+          <p className="text-black-600 text-base font-semibold sm:text-lg">
+            <span>
+              The customer is responsible for any customs and import duties in
+              accordance with the laws of the destination country.
+            </span>
+          </p>
         </div>
         <button
           disabled={isPending}

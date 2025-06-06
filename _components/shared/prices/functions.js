@@ -71,21 +71,21 @@ export const renderDefaultPrices = (data = {}) => {
     if (are_range_prices_equal) {
       return (
         <p className={`mt-2 font-sans`}>
-          {currencyFormat(price?.min?.price?.original)}
+          {currencyFormat(price?.min?.price?.original, price?.currency)}
         </p>
       );
     } else {
       return (
         <p className={`mt-2 font-sans`}>
-          {currencyFormat(price?.min?.price?.original)} -{" "}
-          {currencyFormat(price?.max?.price?.original)}
+          {currencyFormat(price?.min?.price?.original, price?.currency)} -{" "}
+          {currencyFormat(price?.max?.price?.original, price?.currency)}
         </p>
       );
     }
   } else {
     return (
       <p className={`mt-2 font-sans`}>
-        {currencyFormat(price?.price?.original)}
+        {currencyFormat(price?.price?.original, price?.currency)}
       </p>
     );
   }
@@ -109,10 +109,10 @@ export const renderDiscountPrices = (data = {}) => {
           className={`mt-2 flex flex-row flex-wrap items-center gap-3 font-sans`}
         >
           <p className={`font-bold`}>
-            {currencyFormat(price?.min?.price?.discount)}
+            {currencyFormat(price?.min?.price?.discount, price?.currency)}
           </p>
           <p className={`line-through`}>
-            {currencyFormat(price?.min?.price?.original)}
+            {currencyFormat(price?.min?.price?.original, price?.currency)}
           </p>
         </div>
       );
@@ -122,12 +122,12 @@ export const renderDiscountPrices = (data = {}) => {
           className={`mt-2 flex flex-row flex-wrap items-center gap-3 font-sans`}
         >
           <p className={`font-bold`}>
-            {currencyFormat(price?.min?.price?.discount)} -{" "}
-            {currencyFormat(price?.max?.price?.discount)}
+            {currencyFormat(price?.min?.price?.discount, price?.currency)} -{" "}
+            {currencyFormat(price?.max?.price?.discount, price?.currency)}
           </p>
           <p className={`line-through`}>
-            {currencyFormat(price?.min?.price?.original)} -{" "}
-            {currencyFormat(price?.max?.price?.original)}
+            {currencyFormat(price?.min?.price?.original, price?.currency)} -{" "}
+            {currencyFormat(price?.max?.price?.original, price?.currency)}
           </p>
         </div>
       );
@@ -137,9 +137,11 @@ export const renderDiscountPrices = (data = {}) => {
       <div
         className={`mt-2 flex flex-row flex-wrap items-center gap-3 font-sans`}
       >
-        <p className={`font-bold`}>{currencyFormat(price?.price?.discount)}</p>
+        <p className={`font-bold`}>
+          {currencyFormat(price?.price?.discount, price?.currency)}
+        </p>
         <p className={`line-through`}>
-          {currencyFormat(price?.price?.original)}
+          {currencyFormat(price?.price?.original, price?.currency)}
         </p>
       </div>
     );

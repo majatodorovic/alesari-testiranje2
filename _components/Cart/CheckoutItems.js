@@ -75,7 +75,10 @@ const CheckoutItems = ({
             className={`text-center ${className} text-[18px] font-medium md:mt-3`}
           >
             Total:&nbsp;
-            {currencyFormat(productQuantity * price?.per_item?.total)}
+            {currencyFormat(
+              productQuantity * price?.per_item?.total,
+              price?.currency,
+            )}
           </p>
         </div>
         {isClosed && !inventory?.inventory_defined && (
